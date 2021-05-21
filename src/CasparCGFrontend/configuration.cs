@@ -119,6 +119,18 @@ namespace CasparCGFrontend
             return !flash.IsOnlyDefaultValues();
         }
 
+        private Html html = new Html();
+        [XmlElement(ElementName = "html")]
+        public Html Html
+        {
+            get { return this.html; }
+            set { this.html = value; NotifyChanged("Html"); }
+        }
+        public bool ShouldSerializeHtml()
+        {
+            return !html.IsOnlyDefaultValues();
+        }
+
         private Thumbnails thumbnails = new Thumbnails();
         [XmlElement(ElementName = "thumbnails")]
         public Thumbnails Thumbnails

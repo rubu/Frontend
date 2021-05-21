@@ -114,6 +114,7 @@
     </Compile>
     <Compile Include="Consumers\SystemaudioConsumer.cs" />
     <Compile Include="Audio.cs" />
+    <Compile Include="Html.cs" />
     <Compile Include="Mixer.cs" />
     <Compile Include="PredefinedClient.cs" />
     <Compile Include="Osc.cs" />
